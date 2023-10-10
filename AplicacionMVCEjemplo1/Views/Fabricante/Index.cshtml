@@ -1,0 +1,14 @@
+﻿@model List<Fabricante>
+
+<h1>Fabricantes</h1>
+
+<ul>
+	@foreach(var fabricante in Model)
+	{
+		<li>
+			<p>
+				@Html.DisplayFor( (m) => fabricante.Nombre )
+			</p>
+		</li>
+	}
+</ul>
